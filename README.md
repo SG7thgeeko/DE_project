@@ -2,11 +2,11 @@ How It Works:
 
 1. Docker Compose: Using the docker-compose.yaml file, three Docker containers are spun up:
 
-  A source PostgreSQL database with sample data.
+A source PostgreSQL database with sample data.
   
-  A destination PostgreSQL database.
+A destination PostgreSQL database.
   
-  A Python environment that runs the ELT script.
+A Python environment that runs the ELT script.
 
 2. ELT Process: The elt_script.py waits for the source PostgreSQL database to become available. Once it's available, the script uses pg_dump to dump the source database to a SQL file. Then, it uses psql to load this SQL file into the destination PostgreSQL database.
 
