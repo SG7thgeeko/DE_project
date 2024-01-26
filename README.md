@@ -1,4 +1,5 @@
 How It Works:
+
 1.Docker Compose: Using the docker-compose.yaml file, three Docker containers are spun up:
 
 A source PostgreSQL database with sample data.
